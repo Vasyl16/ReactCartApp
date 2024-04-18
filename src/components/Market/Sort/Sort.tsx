@@ -38,6 +38,7 @@ export const SortComp: React.FC<SortCompProps> = ({ sortProperty }) => {
   useEffect(() => {
     const handleClickSort = (e: MouseEvent) => {
       if (e.target && sortRef.current) {
+        console.log(2);
         const _target = e.target as EventTarget & {
           closest: (selector: string) => Element | null;
         };

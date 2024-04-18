@@ -4,9 +4,10 @@ import { Provider } from 'react-redux';
 
 import { HOME_LOCATION } from './constants/HOME_LOCATION';
 
-import './scss/app.scss';
 import { MainLayouts, MarketLayouts } from './layouts';
-import { store } from './redux/store';
+import { store } from './redux/slices/store';
+
+import './scss/app.scss';
 
 const CartItemsPage = React.lazy(
   () => import('./pages/CartItemsPage/CartItemsPage')

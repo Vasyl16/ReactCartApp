@@ -6,7 +6,7 @@ import {
   Pagination,
   SortComp,
 } from 'src/components/';
-import { useAppDispatch } from 'src/redux/store';
+import { useAppDispatch } from 'src/redux/slices/store';
 import { fetchClothes } from '../../redux/slices/clothes/clothesSlice';
 import { FetchPizzaArgs } from 'src/redux/slices/clothes/types';
 
@@ -33,7 +33,6 @@ const MarketPage: React.FC = () => {
       order,
     } as FetchPizzaArgs;
     dispatch(fetchClothes(params));
-    window.scrollTo(0, 0);
   }, [currentPage, categoryId, sortType]);
 
   return (

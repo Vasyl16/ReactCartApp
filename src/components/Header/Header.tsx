@@ -27,7 +27,9 @@ export const Header: React.FC = () => {
   );
 
   useEffect(() => {
+    console.log(2);
     if (isMounted.current) {
+      console.log(1);
       const json = JSON.stringify(items);
       localStorage.setItem(clothesLocalStorage, json);
     }

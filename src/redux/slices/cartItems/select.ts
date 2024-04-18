@@ -1,4 +1,4 @@
-import { RootState } from 'src/redux/store';
+import { RootState } from 'src/redux/slices/store';
 import { CartItems } from './types';
 
 export const selectCartItems = (state: RootState) => state.cartItems;
